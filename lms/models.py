@@ -24,7 +24,7 @@ class Lesson(models.Model):
                                 help_text="Загрузите превью урока", blank=True, null=True)
     video_link = models.CharField(verbose_name="Ссылка на урок", help_text="Добавьте ссылку на урок")
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, verbose_name="Курс", help_text="Выберите курс",
-                               related_name="lessons")
+                               related_name="lessons", blank=True, null=True)
 
     class Meta:
         verbose_name = "Урок"
