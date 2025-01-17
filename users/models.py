@@ -27,7 +27,7 @@ class Payment(models.Model):
     from lms.models import Course, Lesson
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь",
-                             help_text="Выберите пользователя", related_name="payments")
+                             help_text="Выберите пользователя", related_name="payments", blank=True, null=True)
     date = models.DateField(verbose_name="Дата оплаты", auto_now_add=True)
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, verbose_name="Оплаченный курс",
                                help_text="Выберите курс", blank=True, null=True, related_name="payments")
