@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'django_filters',
     'rest_framework',
+    'drf_yasg',
     'users',
     'lms',
 ]
@@ -114,3 +115,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+
+STRIPE_APIKEY = os.getenv('STRIPE_APIKEY')
