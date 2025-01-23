@@ -1,7 +1,7 @@
-from datetime import timedelta, datetime
+from datetime import datetime, timedelta
 
-from celery import shared_task
 import pytz
+from celery import shared_task
 
 from config.settings import TIME_ZONE
 from users.models import User
