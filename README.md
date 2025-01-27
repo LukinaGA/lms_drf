@@ -47,6 +47,7 @@ JWT-авторизация реализована при помощи djangorest
 
 Ссылка для получения [APIKEY](https://dashboard.stripe.com/test/apikeys)
 
+Добавлена система управления отложенными и периодическими задачами celery и celery beat 
 
 ## Тестирование
 
