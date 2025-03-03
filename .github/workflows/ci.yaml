@@ -47,6 +47,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
             cd ${{ secrets.DEPLOY_DIR }}
+            apt install python3.12-venv
             python3 -m venv venv
             source venv/bin/activate
             pip install -r requirements.txt
@@ -73,4 +74,3 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
             sudo systemctl restart myapp.service
           EOF
-          
