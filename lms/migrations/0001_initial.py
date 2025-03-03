@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(help_text='Введите название урока', max_length=100, verbose_name='Урок')),
                 ('description', models.TextField(blank=True, help_text='Введите описание урока', null=True, verbose_name='Описание урока')),
                 ('preview', models.ImageField(blank=True, help_text='Загрузите превью урока', null=True, upload_to='media/img/', verbose_name='Превью урока')),
-                ('video_link', models.CharField(help_text='Добавьте ссылку на урок', verbose_name='Ссылка на урок')),
+                ('video_link', models.CharField(help_text='Добавьте ссылку на урок', max_length=255, verbose_name='Ссылка на урок')),
                 ('course', models.ForeignKey(blank=True, help_text='Выберите курс', null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='lessons', to='lms.course', verbose_name='Курс')),
             ],
             options={
