@@ -24,6 +24,8 @@ eventlet = "^0.38.2"
 redis = "^5.2.1"
 django-celery-beat = "^2.7.0"
 pytz = "^2024.2"
+django-redis = "^5.4.0"
+gunicorn = "^23.0.0"
 
 
 [tool.poetry.group.lint.dependencies]

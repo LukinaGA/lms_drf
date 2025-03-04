@@ -141,6 +141,9 @@ django-phonenumber-field==8.0.0 ; python_version >= "3.12" and python_version < 
     --hash=sha256:8a560fe1b01b94c9de8cde22bc373b695f023cc6df4baba00264cb079da9f631
 django-phonenumbers==1.0.1 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:cd617e4ee924f6492e0106d738fea619c95f3659e41dbeb97df83c1f3b51f453
+django-redis==5.4.0 ; python_version >= "3.12" and python_version < "4.0" \
+    --hash=sha256:6a02abaa34b0fea8bf9b707d2c363ab6adc7409950b2db93602e6cb292818c42 \
+    --hash=sha256:ebc88df7da810732e2af9987f7f426c96204bf89319df4c6da6ca9a2942edd5b
 django-timezone-field==7.1 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:93914713ed882f5bccda080eda388f7006349f25930b6122e9b07bf8db49c4b4 \
     --hash=sha256:b3ef409d88a2718b566fabe10ea996f2838bc72b22d3a2900c0aa905c761380c
@@ -239,6 +242,9 @@ greenlet==3.1.1 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:f1d4aeb8891338e60d1ab6127af1fe45def5259def8094b9c7e34690c8858803 \
     --hash=sha256:f406b22b7c9a9b4f8aa9d2ab13d6ae0ac3e85c9a809bd590ad53fed2bf70dc79 \
     --hash=sha256:f6ff3b14f2df4c41660a7dec01045a045653998784bf8cfcb5a525bdffffbc8f
+gunicorn==23.0.0 ; python_version >= "3.12" and python_version < "4.0" \
+    --hash=sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d \
+    --hash=sha256:f014447a0101dc57e294f6c18ca6b40227a4c90e9bdb586042628030cba004ec
 idna==3.10 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9 \
     --hash=sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3
