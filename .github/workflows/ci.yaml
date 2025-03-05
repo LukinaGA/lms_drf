@@ -43,6 +43,10 @@ jobs:
 
       - name: Copy project files to server
         run: |
-          rsync -avz --exclude '__pycache__' . ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_DIR }}
-
+          rsync -avz --exclude '__pycache__' . ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_DIR }}  << "EOF"
+              docker stop $(docker ps -a -q)
+              docker rm $(docker ps -a -q)
+              docker-compose up -d
+              EOF
+      
 
