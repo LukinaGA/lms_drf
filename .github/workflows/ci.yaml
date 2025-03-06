@@ -75,5 +75,3 @@ jobs:
           docker rm lms || true
           docker run -d -p 8080:80 --name lms ${{ secrets.DOCKER_USERNAME }}/lms:${{ github.sha }}
           EOF
-      
-
